@@ -23,8 +23,43 @@ public class arrex {
         }
 
         for (int i : arr2) {
-            System.out.println(i);
+            // System.out.println(i);
         }
+
+        // Task2: create a num array and find the smallest and largest values
+        int[] num = new int[10];
+        num[0] = 9;
+        num[1] = 0;
+        num[2] = 8;
+        num[3] = 11;
+        num[4] = -1;
+        num[5] = -16; // smallest
+        num[6] = 20; // largest
+        num[7] = -2;
+        num[8] = 2;
+        num[9] = -3;
+
+
+        // sort --> 0 = smallest, length - 1 = largest
+        // track a var and update it
+        // min, max functions
+        
+        int smallest = num[0];
+        int largest = num[0];
+
+        for (int i = 0; i < num.length; i++) {
+            if(smallest > num[i]) { // true
+                smallest = num[i]; // smallest = 0
+            } if(largest < num[i]) {
+                largest = num[i];
+            }
+        }
+
+        System.out.println(largest);
+
+
+
+
 
         
     }
