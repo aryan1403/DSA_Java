@@ -1,7 +1,6 @@
 import java.util.LinkedList;
 
 import java.util.*;
-
 public class llist {
     public static void main(String[] args) {
         //initialise
@@ -34,6 +33,8 @@ public class llist {
         }*/
 
         // list.forEach(element -> System.out.println(element));
+        list.stream().filter(e -> e % 2 == 0)
+                .forEach(System.out::println);
         // list.forEach(System.out::println);
 
         // Java 8 features
