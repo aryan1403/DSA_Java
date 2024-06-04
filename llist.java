@@ -17,7 +17,7 @@ public class llist {
             System.out.println(i);
         }
 
-        for (int i = 0; i < args.length; i++) {
+        for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
 
