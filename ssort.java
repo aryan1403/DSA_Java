@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 class data {
     int id;
@@ -31,7 +32,7 @@ public class ssort {
                 //swap
                 return -1;
             return 1; // not to swap
-        }).forEach(e -> System.out.println("id: " + e.id + ", value: " + e.value));
+        }).collect(Collectors.toSet());
 
     }
 }
